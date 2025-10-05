@@ -1,0 +1,21 @@
+name: Email Action Test
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      # Step with the required email address as the name
+      - name: 23f1003168@ds.study.iitm.ac.in
+        run: |
+          echo "GitHub Action successfully executed."
+          echo "This step contains the required email in its name."
+
+      # Optional: Checkout the repository code
+      - name: Checkout code (optional, but good practice)
+        uses: actions/checkout@v4
